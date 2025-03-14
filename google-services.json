@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563075106072",
+    "project_id": "paybout-777eee",
+    "storage_bucket": "paybout-777eee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563075106072:android:c96a5312c7c6e21ce94a6d",
+        "android_client_info": {
+          "package_name": "com.example.paybout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563075106072-s9jr6dke31gfh7loh4t41599a7veucnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYWqrqEJkrZAOX5pQ8wuO2ifc1Z1gRooA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563075106072-s9jr6dke31gfh7loh4t41599a7veucnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

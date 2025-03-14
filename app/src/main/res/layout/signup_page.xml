@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signinpage_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Logged.SignupPage">
+
+
+    <ImageView
+        android:id="@+id/signinimage_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/applogojpeg"
+        android:contentDescription="App Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_gmailsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Gmail"
+        app:hintAnimationEnabled="true"
+        app:expandedHintEnabled="true"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        app:boxStrokeColor="@color/design_default_color_on_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinimage_logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gmailsigninedit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_edittext"
+            android:gravity="start|center_vertical"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_passwordsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:hint="Password"
+        app:hintAnimationEnabled="true"
+        android:autofillHints="password"
+        android:gravity="start|center_vertical"
+        android:textColorHint="@color/cardview_shadow_start_color"
+        app:boxStrokeColor="@color/design_default_color_on_primary"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_gmailsignin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordloginedit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_edittext"
+            android:inputType="textPassword"
+            android:paddingTop="16dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/signinbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/layout_passwordsignin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/or_editsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:layout_marginTop="8dp"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinbtn"
+        />
+
+
+
+    <TextView
+        android:id="@+id/sign_editsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or_editsignin"
+        />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="140dp"
+        android:background="@drawable/google"
+        app:layout_constraintTop_toBottomOf="@id/sign_editsignin"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintTop_toBottomOf="@id/sign_editsignin"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
